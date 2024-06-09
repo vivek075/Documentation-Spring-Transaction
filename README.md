@@ -79,6 +79,7 @@ Rolling back the transaction if an exception occurs (configurable).
 Internally, Spring uses a `PlatformTransactionManager` (like `DataSourceTransactionManager` for JDBC) to manage transaction boundaries.
 
 **Difficult Issues in Transactions**
+
 Deadlocks: Occur when two or more transactions are waiting for each other to release resources. Proper handling of lock management and using appropriate isolation levels can mitigate this.
 
 Lost Updates: Occur when multiple transactions read the same data and then update it, with one transaction's update overwriting the other's.
